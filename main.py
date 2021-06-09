@@ -1,7 +1,6 @@
 import pygame
 import random
 import math
-import time
 from pygame import mixer
 
 # initializing the pygame
@@ -95,10 +94,6 @@ game_over_font = pygame.font.Font('SfDigitalReadoutHeavyOblique-GKRA.ttf', 64)
 def game_over_text():
     over_text = game_over_font.render("GAME OVER", True, (255, 0, 0))
     screen.blit(over_text, (300, 250))
-    end_sound = mixer.Sound('Game Over Sound Effects High Quality (mp3cut.net).wav')
-    end_sound.play()
-    time.sleep(5)
-    quit()
 
 
 
